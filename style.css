@@ -387,8 +387,9 @@ input{
   display: inline-block;
   border: none;
   outline: none;
-  padding-right: 74px;
-  width: 0px;
+  padding-right: 0px;
+  margin-right: 20px;
+  width: 80px;
   position: absolute;
   top: 0;
   right: 0;
@@ -401,7 +402,7 @@ input{
   border-bottom: 1px solid var(--black-color);
 }
 #search-bar input[type="text"]:focus {
-  width: 200px;
+  width: 120px;
   z-index: 1;
   border-bottom: 1px solid var(--black-color);
   cursor: text;
