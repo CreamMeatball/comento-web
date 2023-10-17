@@ -257,27 +257,27 @@
         <form class="form-group">
           <div class="row d-flex flex-wrap">
             <div class="col-lg-6">
-              <h3 class="pb-4">Billing Details</h3>
+              <h3 class="pb-4">결제 정보</h3>
               <div class="billing-details">
                 <div class="py-3">
-                  <label for="fname">First Name*</label>
+                  <label for="fname">이름 *</label>
                   <input type="text" id="fname" name="firstname" class="w-100">
                 </div>
 
                 <div class="py-3">
-                  <label for="lname">Last Name*</label>
+                  <label for="lname">성 *</label>
                   <input type="text" id="lname" name="lastname" class="w-100">
                 </div>
 
                 <div class="py-3">
-                  <label for="cname">Company Name(optional)*</label>
+                  <label for="cname">회사명 (선택) *</label>
                   <input type="text" id="cname" name="companyname" class="w-100">
                 </div>
 
                 <div class="py-3">
-                  <label for="cname">Country / Region*</label>
+                  <label for="cname">나라 *</label>
                   <select class="w-100" aria-label="Default select example">
-                    <option selected="" hidden="">United States</option>
+                    <option selected="" hidden="">Republic of Korea</option>
                     <option value="1">UK</option>
                     <option value="2">Australia</option>
                     <option value="3">Canada</option>
@@ -285,20 +285,20 @@
                 </div>
 
                 <div class="py-3">
-                  <label for="address">Street Address*</label>
-                  <input type="text" id="adr" name="address" placeholder="House number and street name" class="w-100">
-                  <input type="text" id="adr" name="address" placeholder="Appartments, suite, etc." class="w-100">
+                  <label for="address">도로명 *</label>
+                  <input type="text" id="adr" name="address" placeholder="도로명 주소" class="w-100">
+                  <input type="text" id="adr" name="address" placeholder="상세 주소" class="w-100">
                 </div>
 
                 <div class="py-3">
-                  <label for="city">Town / City *</label>
+                  <label for="city">시 / 도 *</label>
                   <input type="text" id="city" name="city" class="w-100">
                 </div>
 
                 <div class="py-3">
-                  <label for="state">State *</label>
+                  <label for="state">지역 *</label>
                   <select class="w-100" aria-label="Default select example">
-                    <option selected="" hidden="">Florida</option>
+                    <option selected="" hidden="">서울</option>
                     <option value="1">New York</option>
                     <option value="2">Chicago</option>
                     <option value="3">Texas</option>
@@ -308,34 +308,34 @@
                 </div>
 
                 <div class="py-3">
-                  <label for="zip">Zip Code *</label>
+                  <label for="zip">우편번호 *</label>
                   <input type="text" id="zip" name="zip" class="w-100">
                 </div>
 
                 <div class="py-3">
-                  <label for="email">Phone *</label>
+                  <label for="email">핸드폰 번호 *</label>
                   <input type="text" id="phone" name="phone" class="w-100">
                 </div>
                 
                 <div class="py-3">
-                  <label for="email">Email address *</label>
+                  <label for="email">이메일 *</label>
                   <input type="text" id="email" name="email" class="w-100">
                 </div>
               </div>
             </div>
             <div class="col-lg-6">
-              <h3 class="pb-4">Additional Information</h3>
+              <h3 class="pb-4">추가 정보</h3>
               <div class="billing-details">
-                <label for="fname">Order notes (optional)</label>
-                <textarea class="w-100" placeholder="Notes about your order. Like special notes for delivery."></textarea>
+                <label for="fname">전달 사항 (선택)</label>
+                <textarea class="w-100" placeholder="조심히 배송해주세요"></textarea>
               </div>
               <div class="your-order mt-5">
-                <h3 class="pb-4">Cart Totals</h3>
+                <h3 class="pb-4">총 가격</h3>
                 <div class="total-price">
                   <table cellspacing="0" class="table">
                     <tbody>
                       <tr class="subtotal border-top border-bottom border-dark pt-2 pb-2 text-uppercase">
-                        <th class="fw-light">Subtotal</th>
+                        <th class="fw-light">할인 전</th>
                         <td data-title="Subtotal">
                           <span class="price-amount amount text-primary ps-5">
                             <bdi>
@@ -344,7 +344,7 @@
                         </td>
                       </tr>
                       <tr class="order-total border-bottom border-dark pt-2 pb-2 text-uppercase">
-                        <th class="fw-light">Total</th>
+                        <th class="fw-light">할인 후</th>
                         <td data-title="Total">
                           <span class="price-amount amount text-primary ps-5">
                             <bdi>
@@ -358,33 +358,33 @@
                     <label class="list-group-item p-0 bg-transparent d-flex gap-2 border-0">
                       <input class="form-check-input p-0 flex-shrink-0" type="radio" name="listGroupRadios" id="listGroupRadios1" value="" checked>
                       <span>
-                        <div class="fw-300 text-uppercase">Direct bank transfer</div>
-                        <p class="d-block">Make your payment directly into our bank account. Please use your Order ID. Your order will shipped after funds have cleared in our account.</p>
+                        <div class="fw-300 text-uppercase">계좌 이체</div>
+                        <!-- <p class="d-block">Make your payment directly into our bank account. Please use your Order ID. Your order will shipped after funds have cleared in our account.</p> -->
                       </span>
                     </label>
                     <label class="list-group-item p-0 bg-transparent d-flex gap-2 border-0">
                       <input class="form-check-input p-0 flex-shrink-0" type="radio" name="listGroupRadios" id="listGroupRadios2" value="">
                       <span>
-                        <div class="fw-300 text-uppercase">Check payments</div>
-                        <p class="d-block">Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
+                        <div class="fw-300 text-uppercase">신용카드 / 체크카드</div>
+                        <!-- <p class="d-block">Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p> -->
                       </span>
                     </label>
-                    <label class="list-group-item p-0 bg-transparent d-flex gap-2 border-0">
+                    <!-- <label class="list-group-item p-0 bg-transparent d-flex gap-2 border-0">
                       <input class="form-check-input p-0 flex-shrink-0" type="radio" name="listGroupRadios" id="listGroupRadios3" value="">
                       <span>
-                        <div class="fw-300 text-uppercase">Cash on delivery</div>
+                        <div class="fw-300 text-uppercase">방문 결제</div>
                         <p class="d-block">Pay with cash upon delivery.</p>
                       </span>
-                    </label>
+                    </label> -->
                     <label class="list-group-item p-0 bg-transparent d-flex gap-2 border-0">
                       <input class="form-check-input p-0 flex-shrink-0" type="radio" name="listGroupRadios" id="listGroupRadios3" value="">
                       <span>
-                        <div class="fw-300 text-uppercase">Paypal</div>
-                        <p class="d-block">Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.</p>
+                        <div class="fw-300 text-uppercase">카카오페이</div>
+                        <!-- <p class="d-block">Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.</p> -->
                       </span>
                     </label>
                   </div>
-                  <button type="submit" name="submit" class="btn btn-dark w-100">Place an order</button>
+                  <button type="submit" name="submit" class="btn btn-dark w-100">결제하기</button>
                 </div>
               </div>
             </div>
@@ -397,15 +397,22 @@
         <div class="newsletter">
           <div class="row">
             <div class="col-lg-6 col-md-12 title">
-              <h3>Subscribe to Our Newsletter</h3>
-              <p>Get latest news, updates and deals directly mailed to your inbox.</p> 				
+              <h3>SNS로 저희와 소통하세요!</h3>
+              <p>최신 소식을 가장 먼저 접해보세요</p> 				
             </div>
-            <form class="col-lg-6 col-md-12 d-flex align-items-center">
+            <div class="col-lg-6 col-md-12 title">
+              <img src="images/instagram_logo.png" width="50px" height="50px">
+              <img src="images/instagram_logo.png" width="50px" height="50px">
+              <img src="images/instagram_logo.png" width="50px" height="50px">
+              <img src="images/instagram_logo.png" width="50px" height="50px">
+              <img src="images/instagram_logo.png" width="50px" height="50px">
+            </div>
+            <!-- <form class="col-lg-6 col-md-12 d-flex align-items-center">
               <div class="d-flex w-75 border-bottom border-dark py-2">
                 <input id="newsletter1" type="text" class="form-control border-0 p-0" placeholder="Your email address here">
                 <button class="btn border-0 p-0" type="button">Subscribe</button>
               </div>
-            </form>
+            </form> -->
           </div> 			
         </div>
       </div>
@@ -457,7 +464,7 @@
                 </div>
               </div>
               <div class="col-lg-3 col-sm-6 pb-3">
-                <div class="footer-menu">
+                <!-- <div class="footer-menu">
                   <h4 class="widget-title pb-2">Social info</h4>
                   <p>You can follow us on our social platforms to get updates.</p>
                   <div class="social-links">
@@ -499,7 +506,7 @@
                       </li>
                     </ul>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -512,7 +519,7 @@
         <div class="row d-flex flex-wrap justify-content-between">
           <div class="col-12">
             <div class="copyright">
-              <p>© Copyright 2023 Micas. HTML Template by <a href="https://templatesjungle.com/" target="_blank"><b>TemplatesJungle</b></a></p>
+              <p>© Copyright 2023 Comento <a href="https://templatesjungle.com/" target="_blank"><b>COMENTO</b></a></p>
             </div>
           </div>
         </div>
