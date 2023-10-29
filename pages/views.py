@@ -6,3 +6,6 @@ def mainpage(request):
 
 def about(request):
     return render(request, 'pages/about.html')
+
+def shop(request):
+    return render(request, 'pages/shop.html')
